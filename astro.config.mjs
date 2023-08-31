@@ -13,6 +13,5 @@ export default defineConfig({
 	output: 'server',
   adapter: deno(),
   site: 'https://wpxpaul.github.io',
-  base: '/',
 });
 
