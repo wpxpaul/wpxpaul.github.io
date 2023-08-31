@@ -1,0 +1,89 @@
+---
+import Layout from "../components/Layout.astro";
+import Paul from "../images/profp.jpeg";
+import dizzle from "../images/dizzle.png"
+---
+
+<Layout title="Welcome to Astro Neumorphism template">
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Divs</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      overflow: hidden; /* Prevent scrolling */
+    }
+  </style>
+</head>
+<body>
+  <!-- Your existing code here -->
+</body>
+</html>
+
+
+  <div class="flex flex-col h-screen">
+    <!-- Content Container -->
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-center md:justify-between space-y-4 md:space-y-0 p-4 md:p-6">
+      <!-- First Div -->
+      <div class="flex flex-col items-center space-y-4 shadow-box-up dark:shadow-orange-dark p-4 md:p-6 rounded-xl">
+        <img
+          class="p-1 w-40 h-100 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+          src={Paul}
+          alt="Bordered avatar"
+        />
+        <div class="dark:text-white">
+          <div class="mb-4 md:mb-0 font-medium">Paul Dubb</div>
+          <div class="text-xs text-gray-500 dark:text-gray-400 text-left">
+            <span class="mb-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac sapien nec purus interdum finibus. In hac habitasse platea dictumst. Nulla facilisi. Sed nec nunc ut odio congue euismod.
+            </span>
+            <span class="mb-2">
+              Fusce nec lectus vel leo efficitur venenatis nec ac nulla. Vivamus et justo nec elit tincidunt malesuada. Curabitur dapibus, turpis id finibus suscipit, ante mi blandit libero, et dignissim quam odio id risus.
+            </span>
+            <span class="mb-2">
+              Quisque sit amet libero vel neque fringilla tincidunt a nec sem. Sed cursus, libero in vehicula finibus, elit velit ullamcorper tortor, non fermentum est neque ut sapien. Sed congue mi et justo laoreet malesuada. Suspendisse potenti.
+            </span>
+          </p>
+          <!-- Add links using anchor tags -->
+          <p>
+            <a href="https://example.com" class="text-blue-500 hover:underline">Example Link 1</a>
+            <br>
+            <a href="https://example.com" class="text-blue-500 hover:underline">Example Link 2</a>
+          </p>        
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden md:block w-20"></div>
+      
+      <!-- Second Div (Copy of the First Div) -->
+      <div class="flex flex-col items-center space-y-4 shadow-box-up dark:shadow-orange-dark p-4 md:p-6 rounded-xl">
+        <img
+          class="p-1 w-40 h-100 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+          src={dizzle}
+          alt="Bordered avatar"
+        />
+        <div class="dark:text-white">
+          <div class="mb-4 md:mb-0 font-medium">Zach Reifschneider</div>
+          <div class="text-xs text-gray-500 dark:text-gray-400 text-left">
+            <span class="mb-2">
+              Zach Reifschneider is the creator and lead analyst of Dizzle Dynasty Sports. With over a decade of experience playing fantasy sports like basketball and football, Dizzle Dynasty Sports was created with the intent of helping to expand the dynasty basketball community. Using his passions for writing, content creation, basketball and his current career in marketing, Zach aims to create fun and informative basketball content created for avid players from the perspective of one. Although he considers himself a worldwide basketball fan, he is a lifelong Cleveland Cavaliers fan.
+            </span>
+          </p>
+          <!-- Add links using anchor tags -->
+          <p>
+            <a href="https://example.com" class="text-blue-500 hover:underline">Example Link 1</a>
+            <br>
+            <a href="https://example.com" class="text-blue-500 hover:underline">Example Link 2</a>
+          </p>        
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
